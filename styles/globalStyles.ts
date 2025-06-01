@@ -10,9 +10,9 @@ interface GlobalStyles {
 
   itemContainer: ViewStyle;
   item: ViewStyle;
-  dateContainer: ViewStyle;
-  dateDay: TextStyle;
-  dateMonth: TextStyle;
+  data: ViewStyle;
+  dataDia: TextStyle;
+  dataMes: TextStyle;
   itemTitle: TextStyle;
 
   separator: ViewStyle;
@@ -20,6 +20,10 @@ interface GlobalStyles {
   subtitle: TextStyle;
 
   conteudo: TextStyle;
+
+  link: TextStyle;
+  linkText: TextStyle;
+
 }
 
 const globalStyles = StyleSheet.create<GlobalStyles>({
@@ -81,7 +85,7 @@ const globalStyles = StyleSheet.create<GlobalStyles>({
     shadowRadius: 4,
     elevation: 4,
   },
-  dateContainer: {
+  data: {
     backgroundColor: '#c0c0c0',
     paddingHorizontal: 12,
     paddingVertical: 8,
@@ -91,19 +95,26 @@ const globalStyles = StyleSheet.create<GlobalStyles>({
     marginRight: 16,
     minWidth: 60,
   },
-  dateDay: {
+  dataDia: {
     fontSize: 24,
     color: 'black',
     fontWeight: 'bold',
     textAlign: 'center',
   },
-  dateMonth: {
+  dataMes: {
     fontSize: 12,
-    // removi color vazia
     fontWeight: '600',
     textTransform: 'capitalize',
     textAlign: 'center',
     marginTop: 2,
+  },
+  link: {
+    marginTop: 15,
+    paddingVertical: 15,
+  },
+  linkText: {
+    fontSize: 14,
+    color: '#2e78b7',
   },
   itemTitle: {
     flex: 1,
